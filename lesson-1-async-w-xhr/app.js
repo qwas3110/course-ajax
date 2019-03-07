@@ -7,7 +7,7 @@
         return new Promise((resolve, reject) => {
             var req = new XMLHttpRequest();
             req.open('GET',url);
-            req.setRequestHeader('Authorization', 'Client-ID 557354770f65429aaac1de0985053a29dad393d2d87dc9021e27fc339a24c1a1');
+            req.setRequestHeader('Authorization', 'Client-ID ');
             req.onload = function () {
                 if (req.status === 200) {
                     resolve(req.responseText);
@@ -25,9 +25,10 @@
     // 获取数据后，加入页面
     function addImage(data) {
         const firstImage = data.results[0];
+        console.log(data);
         const htmlContent = `<figure>
-            <img src="${firstImage.urls.regular}" alt="${searchedForText}">
-            <figcaption>${searchedForText} by of ${firstImage.user.name}</figcaption>
+            <img src="${firstImage.urls.regular}" alt="Author of ${firstImage.user.name}">
+            <figcaption>Author by of ${firstImage.user.name}</figcaption>
         </figure>`;
         responseContainer.insertAdjacentHTML('afterbegin', htmlContent);
     }
