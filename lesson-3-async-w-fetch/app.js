@@ -21,11 +21,27 @@
     }
 
     // 将新闻放入列表
+    // function addArticl(data) {
+    //     let htmlContent = '<ul>' + data.response.docs.map(b => `<li class="article">
+    //         <h2><a href="${b.web_url}">${b.headline.main}</a></h2>
+    //         <p>${b.snippet}</p>
+    //     </li>`).join('') + '</ul>';
+    //     responseContainer.insertAdjacentHTML('beforeend', htmlContent);
+    // }
+
     function addArticl(data) {
-        let htmlContent = '<ul>' + data.response.docs.map(b => `<li class="article">
-            <h2><a href="${b.web_url}">${b.headline.main}</a></h2>
-            <p>${b.snippet}</p>
-        </li>`).join('') + '</ul>';
+        let htmlContent = '';
+        if (data.response && data.response.docs && data.response.docs.length > 1) {
+            const article = data.response.docs;
+            htmlContent = '<ul>' + article.map(b => `<li class="article">
+                    <h2><a href="${b.web_url}">${b.headline.main}</a></h2>
+                    <p>${b.snippet}</p>
+            </li>`).join('') + '</ul>';
+        } else {
+            htmlContent = `<div class="error-no-articles">
+                No articles available
+            </div>`;
+        }
         responseContainer.insertAdjacentHTML('beforeend', htmlContent);
     }
     // 定义错误响应
@@ -45,11 +61,11 @@
             }
         }).then(response => response.json())
             .then(addImage)
-            .catch(event => requestError(event,'image'));
+            .catch(err => requestError(err,'image'));
         // 使用fetch API 链接 纽约时报API
         fetch(articleText)
             .then(response => response.json())
             .then(addArticl)
-            .catch(e => requestError(e,'article'));
+            .catch(err => requestError(err,'article'));
     });
 })();
