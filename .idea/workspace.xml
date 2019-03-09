@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4608bae-177b-4d8d-b494-f9d0f1ea58a6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/lesson-1-async-w-xhr/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-1-async-w-xhr/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/course-ajax.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/course-ajax.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson-2-async-w-jQuery/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson-2-async-w-jQuery/app.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,8 +22,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lesson-1-async-w-xhr/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="65">
-                  <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="30" selection-end-column="5" />
+                <state relative-caret-position="101">
+                  <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
                 </state>
               </provider>
             </entry>
@@ -31,7 +32,7 @@
             <entry file="file://$PROJECT_DIR$/lesson-2-async-w-jQuery/app.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="210">
-                  <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+                  <caret line="51" selection-start-line="51" selection-end-line="51" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -55,8 +56,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lesson-2-async-w-jQuery/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="286">
-                  <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+                <state relative-caret-position="122">
+                  <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -86,8 +87,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="726" />
-    <option name="width" value="714" />
+    <option name="x" value="1283" />
+    <option name="width" value="157" />
     <option name="height" value="900" />
   </component>
   <component name="ProjectView">
@@ -128,7 +129,7 @@
     <property name="node.js.selected.package.eslint" value="/usr/local/lib/node_modules/eslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -153,12 +154,12 @@
       <option name="presentableId" value="Default" />
       <updated>1551940649303</updated>
       <workItem from="1551940651468" duration="13331000" />
-      <workItem from="1552094700091" duration="4654000" />
+      <workItem from="1552094700091" duration="5191000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17985000" />
+    <option name="totallyTimeSpent" value="18522000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="726" y="0" width="714" height="900" extended-state="6" />
@@ -176,7 +177,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.11566265" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22409639" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -203,15 +204,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lesson-1-async-w-xhr/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="30" selection-end-column="5" />
+        <state relative-caret-position="101">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lesson-2-async-w-jQuery/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="122">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

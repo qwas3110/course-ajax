@@ -15,6 +15,11 @@
         </figure>`
         );
     }
+    // 相片API 报错的时候
+    function requestError(e,part) {
+        console.log(e);
+        responseContainer.insertAdjacentHTML('beforeend', `<p class="network-warning error-no-articles">${part};</p>`);
+    }
 
     // 将新闻放入列表
     function addArticl(data) {
@@ -32,10 +37,16 @@
         // 调用相片API
         $.ajax({
             url: `https://api.unsplash.com/search/photos?query=${searchField.value}&client_id=557354770f65429aaac1de0985053a29dad393d2d87dc9021e27fc339a24c1a1`
-        }).done(addImage);
+        }).done(addImage)
+            .fail(function (err) {
+                requestError(err,'image');
+            });
         // 调用纽约时报API
         $.ajax({
             url: `http://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchField.value}&api-key=s190ixVYfs7W8ddzklF90JndtEsKJiEt`
-        }).done(addArticl);
+        }).done(addArticl)
+            .fail(function (err) {
+                requestError(err,'article');
+            });
     });
 })();
