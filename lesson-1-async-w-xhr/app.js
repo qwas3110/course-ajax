@@ -29,6 +29,7 @@
         </li>`).join('') + '</ul>';
         responseContainer.insertAdjacentHTML('beforeend', htmlContent);
     }
+    // 页面事件
     const responseContainer = document.querySelector('#response-container');
     form.addEventListener('submit', function (e) {
         e.preventDefault();
